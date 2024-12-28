@@ -13,7 +13,7 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-    - name: ".tests /model_test.py"
+    - name: ".tests/model_test.py"
       id: tests-model_test-py
       uses: classroom-resources/autograding-python-grader@v1
       with:
