@@ -1,1 +1,2 @@
 path: penguins_model.joblib
+features: ['bill_length_mm', 'bill_depth_mm']
