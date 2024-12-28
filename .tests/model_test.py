@@ -3,5 +3,6 @@ from main import main
 import pandas as pd
 
 def test_model():
-    #model = joblib.load("penguins_model.joblib"
+    path = "penguins_model.joblib"
+    model = joblib.load(path)
     assert main() == 274
