@@ -1,8 +1,22 @@
 import joblib
 import pandas as pd
 from sklearn.metrics import accuracy_score
+import yaml
 
 def test_model():
+
+
+    # # Load the YAML file
+    # with open('config.yaml', 'r') as file:
+    #     config = yaml.safe_load(file)
+    
+    # # Access the data
+    # path = config['path']
+    # features = config['features']
+    # assert len(features) == 2
+
+
+    
     penguins_test = pd.read_csv(".tests/penguins_test.csv")
     penguins_test = penguins_test.dropna() # remove none
     X = penguins_test.drop(columns = ["species"])
