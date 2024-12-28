@@ -1,5 +1,6 @@
 import pandas as pd
-import joblib
+from sklearn.externals import joblib
+
 
 def main():
   file_path = "penguins.csv"
