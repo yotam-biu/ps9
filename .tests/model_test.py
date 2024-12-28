@@ -1,10 +1,15 @@
 import joblib
 from main import main
 import pandas as pd
+from sklearn.metrics import accuracy_score
 
 def test_model():
-    data_path = ".tests/penguins_test.csv"
-    data_test = pd.read_csv(data_path)
-    model_path = "penguins_model.joblib"
-    model = joblib.load(model_path)
-    assert main() == 274
+    penguins_test = pd.read_csv("penguins_test.csv")
+    penguins_test = penguins_test.dropna() # remove none
+    X = penguins_test.drop(columns = ["species"])
+    y = penguins_test["species"] # categorial
+    features = ['bill_length_mm', 'bill_depth_mm']
+    X = X[features]
+    prediction = model.predict(X)
+    score = accuracy_score(y, prediction)
+    assert score > 0.95
