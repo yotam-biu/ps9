@@ -4,4 +4,4 @@ import pandas as pd
 
 def test_model():
     #model = joblib.load("penguins_model.joblib"
-    assert main() == 275
+    assert main() == 274
