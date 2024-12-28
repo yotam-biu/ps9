@@ -1,5 +1,4 @@
 import joblib
-from main import main
 import pandas as pd
 from sklearn.metrics import accuracy_score
 
