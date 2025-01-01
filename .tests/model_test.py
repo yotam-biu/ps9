@@ -23,4 +23,4 @@ def test_model():
     model = joblib.load("svc_parkinsons.joblib")
     prediction = model.predict(X)
     score = accuracy_score(y, prediction)
-    assert True#score > 0.7
+    assert score > 0.7
