@@ -1,2 +1,2 @@
 path: svc_parkinsons.joblib
-features: ['PPE', 'DFA']
+features: ['PPE', 'NHR']
