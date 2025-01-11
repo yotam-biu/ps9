@@ -1,4 +1,4 @@
-# tutorial9: Machine Learning
+# ps9: Machine Learning
 
 # Instructions  
 
